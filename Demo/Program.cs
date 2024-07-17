@@ -27,17 +27,26 @@ namespace Demo
 
             #region Unary Operator
 
-            Complex C3 = new Complex();
+            //Complex C3 = new Complex();
 
-            Console.WriteLine(C1);
+            //Console.WriteLine(C1);
 
-            C3 = ++C1; Console.WriteLine("After  C3 = ++C1; ");
+            //C3 = ++C1; Console.WriteLine("After  C3 = ++C1; ");
 
-            Console.WriteLine(C1);
+            //Console.WriteLine(C1);
 
             #endregion
 
+            #region Relational Operator[Comparison Operator]
 
+            if (C1 > C2)
+                Console.WriteLine("C1 Is Greater Than C2 ");
+            else if (C1 < C2)
+                Console.WriteLine("C1 Is Less Than C2 ");
+            else
+                Console.WriteLine("C1 Equals C2");
+
+            #endregion
 
 
         }
