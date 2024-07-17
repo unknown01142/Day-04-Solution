@@ -1,4 +1,5 @@
 ﻿
+using Demo.Casting_Overloading_Operator;
 using Demo.Overloading_Operator;
 
 namespace Demo
@@ -60,19 +61,40 @@ namespace Demo
             #endregion
 
             #region Example 02 [Implicitly]
-            object O1 = "Hany";
+            //object O1 = "Hany";
 
-            string X = (string)O1;
-            string Y = (string)C1;// Implicit Casting 
+            //string X = (string)O1;
+            //string Y = (string)C1;// Implicit Casting 
 
-            Console.WriteLine($"Y = {Y}");
-
-            #endregion
-
+            //Console.WriteLine($"Y = {Y}");
 
             #endregion
 
 
+            #endregion
+
+            #region Casting Operator Overloading - Business Need [Maping]
+
+
+            //User user = new User()
+            //{
+            //    Id = 123,
+            //    FullName = "Hany Bakry",
+            //    Email = "Hany@Email.com",
+            //    Password = "p@ssword!",
+            //    SecurityStmp = Guid.NewGuid(),
+            //};
+
+            //UserViewModel model = (UserViewModel) user;
+
+            //Console.WriteLine(model.Id);
+            //Console.WriteLine(model.FName);
+            //Console.WriteLine(model.LName);
+            //Console.WriteLine(model.Email);
+            //Console.WriteLine(model.Password);
+
+
+            #endregion
 
         }
     }
