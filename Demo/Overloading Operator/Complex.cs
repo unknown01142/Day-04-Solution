@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Demo.Overloading_Operator
+{
+    class Complex
+    {
+        #region Operator Overloading
+
+        // Overloading Operator: Must be Non-Private Class Member Function
+
+        #region Binary Operator
+
+        public int Real { get; set; }
+        public int Imag { get; set; }
+
+        public static Complex operator +(Complex Left, Complex Right)
+        {
+            return new Complex
+            {
+                Real = Left?.Real ?? 0 + Right?.Real ?? 0,
+                Imag = Right?.Imag ?? 0 + Left?.Imag ?? 0,
+            };
+
+        }
+
+
+        #region Method
+        public override string ToString()
+        {
+            return $"{Real}+{Imag}i";
+        }
+
+        #endregion
+
+        #endregion
+
+
+
+
+        #endregion
+    }
+}
+
