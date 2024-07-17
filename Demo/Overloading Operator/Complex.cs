@@ -38,6 +38,30 @@ namespace Demo.Overloading_Operator
 
         #endregion
 
+        #region Unary Operator
+        public static Complex operator ++(Complex C)
+        {
+            return new Complex()
+            {
+                Real = (C?.Real ?? 0) + 1,
+                Imag = (C?.Imag ?? 0),
+
+            };
+
+        }
+        public static Complex operator --(Complex C)
+        {
+            return new Complex()
+            {
+                Real = (C?.Real ?? 0) - 1,
+                Imag = (C?.Imag ?? 0),
+
+            };
+
+        }
+        #endregion
+
+
 
 
 

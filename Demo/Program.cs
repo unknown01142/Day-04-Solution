@@ -13,15 +13,27 @@ namespace Demo
 
             #region Binary Operator
 
-            Complex C3 = default;
+            //Complex C3 = default;
 
-            C3 = C1 + C2;
+            //C3 = C1 + C2;
 
-            Console.WriteLine($"C1 = {C1}");
-            Console.WriteLine($"C2 = {C2}");
-            Console.WriteLine("----------");
+            //Console.WriteLine($"C1 = {C1}");
+            //Console.WriteLine($"C2 = {C2}");
+            //Console.WriteLine("----------");
 
-            Console.WriteLine($"C3 = {C3}");
+            //Console.WriteLine($"C3 = {C3}");
+
+            #endregion
+
+            #region Unary Operator
+
+            Complex C3 = new Complex();
+
+            Console.WriteLine(C1);
+
+            C3 = ++C1; Console.WriteLine("After  C3 = ++C1; ");
+
+            Console.WriteLine(C1);
 
             #endregion
 
