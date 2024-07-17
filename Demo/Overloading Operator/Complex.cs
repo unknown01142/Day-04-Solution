@@ -79,13 +79,34 @@ namespace Demo.Overloading_Operator
                 return Left?.Real < Right?.Real;
         }
 
+        #endregion
 
+        #region Casting Operator 
+
+        // Overloading Casting Operator: Create Non-private Class Memeber Function
+
+        #region Example 01
+        
+        public static /*int*/ explicit operator int(Complex C)
+        {
+            return C?.Real ?? 0;
+
+        }
+
+        #endregion
+
+        #region Example 02 
+
+        public static implicit operator string(Complex C)
+        {
+            return C?.ToString() ?? string.Empty;
+        }
 
 
         #endregion
 
 
-
+        #endregion
 
         #endregion
     }

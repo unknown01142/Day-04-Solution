@@ -39,14 +39,39 @@ namespace Demo
 
             #region Relational Operator[Comparison Operator]
 
-            if (C1 > C2)
-                Console.WriteLine("C1 Is Greater Than C2 ");
-            else if (C1 < C2)
-                Console.WriteLine("C1 Is Less Than C2 ");
-            else
-                Console.WriteLine("C1 Equals C2");
+            //if (C1 > C2)
+            //    Console.WriteLine("C1 Is Greater Than C2 ");
+            //else if (C1 < C2)
+            //    Console.WriteLine("C1 Is Less Than C2 ");
+            //else
+            //    Console.WriteLine("C1 Equals C2");
 
             #endregion
+
+            #region Casting Operator 
+
+            #region Example 01 [Explicitly]
+            //object O1 = 5;
+
+            //int X = (int)O1;
+            //int Y = (int)C1; // explicit casting 
+
+            //Console.Writeline($"Y = {Y}");
+            #endregion
+
+            #region Example 02 [Implicitly]
+            object O1 = "Hany";
+
+            string X = (string)O1;
+            string Y = (string)C1;// Implicit Casting 
+
+            Console.WriteLine($"Y = {Y}");
+
+            #endregion
+
+
+            #endregion
+
 
 
         }
