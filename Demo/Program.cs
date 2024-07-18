@@ -1,6 +1,8 @@
 ﻿
+using Demo.Abstraction;
 using Demo.Casting_Overloading_Operator;
 using Demo.Overloading_Operator;
+using System.Drawing;
 
 namespace Demo
 {
@@ -95,6 +97,43 @@ namespace Demo
 
 
             #endregion
+
+            #region Abstraction [Class , Method , Property ] 
+
+            ///Rect rect = new Rect() { Dim01 = 10 , Dim02 = 20 };
+            ///decimal rectArea = rect.CalcArea();
+            ///decimal rectPeri = rect.Perimeter;
+            ///
+            ///Console.WriteLine($"Rect Peri : {rectPeri}");
+            ///Console.WriteLine($"Rectangle Area : {rectArea}");
+            ///Console.WriteLine("#########");
+
+            ///Square square = new Square(20);
+            ///
+            ///decimal squareArea = square.CalcArea();
+            ///decimal squarePeri = square.Perimeter;
+            ///
+            ///Console.WriteLine($"Square Peri : {squarePeri}");
+            ///Console.WriteLine($"Square Area : {squareArea}");
+
+            ///Circle circle = new Circle(20);
+            ///
+            ///decimal circlArea = circle.CalcArea();
+            ///decimal circlePeri = circle.Perimeter;
+            ///
+            ///Console.WriteLine($"circlArea : {circlArea}");
+            ///Console.WriteLine($"circlePeri : {circlePeri}");
+
+
+
+
+
+
+
+
+            #endregion
+
+
 
         }
     }
