@@ -3,6 +3,7 @@ using Demo.Abstraction;
 using Demo.Casting_Overloading_Operator;
 using Demo.Overloading_Operator;
 using System.Drawing;
+using Demo.Partial;
 
 namespace Demo
 {
@@ -137,11 +138,18 @@ namespace Demo
             ImmutableString str = new ImmutableString("Hany");
 
             //str.Value = "Mohamed" // Invalid
-            str = new ImmutableString("Mohamed"); 
+            str = new ImmutableString("Mohamed");
             #endregion
 
+            #region Partial 
+            Employee employee = new Employee();
 
+            employee.Id = 1;
+            employee.Name = "Hany";
+            employee.Age = 30;
+            employee.Address = "Giza , Ma3adi.";
 
+            #endregion
 
 
 
