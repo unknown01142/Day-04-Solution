@@ -1,4 +1,4 @@
-﻿
+﻿using Demo.Sealed;
 using Demo.Abstraction;
 using Demo.Casting_Overloading_Operator;
 using Demo.Overloading_Operator;
@@ -98,7 +98,7 @@ namespace Demo
 
             #endregion
 
-            #region Abstraction [Class , Method , Property ] 
+            #region Abstraction [Class , Method , Property] 
 
             ///Rect rect = new Rect() { Dim01 = 10 , Dim02 = 20 };
             ///decimal rectArea = rect.CalcArea();
@@ -132,6 +132,17 @@ namespace Demo
 
 
             #endregion
+
+            #region Sealed [Class , Method , Property]
+            ImmutableString str = new ImmutableString("Hany");
+
+            //str.Value = "Mohamed" // Invalid
+            str = new ImmutableString("Mohamed"); 
+            #endregion
+
+
+
+
 
 
 
